@@ -31,7 +31,7 @@ def calculate(*args):
         entry_temp.set('0')
     match scl:
         case 'K':
-            convert_temp1.set(f"{float(e_temp) - 273.15 *1.8 + 32: .2f}")
+            convert_temp1.set(f"{(float(e_temp) - 273.15) *1.8 + 32: .2f}")
             convert_temp2.set(f"{float(e_temp) - 273.15: .2f}")
         case 'F':
             convert_temp1.set(f"{(float(e_temp) - 32)/1.8: .2f}")
